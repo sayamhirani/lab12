@@ -1,6 +1,6 @@
 "use strict";
 
-document.getElementById("nameId").textContent = "Washington Valencia / 77777"
+document.getElementById("nameId").textContent = "Washington / 77777777"
 
 //Dynamic background color change
 const color = ['#F0E68C', '#FFDAB9', '#FFE4B5', '#D8BFD8', '#B0E0E6', '#AFEEEE', '#E0FFFF', '#98FB98', '#FFDEAD', '#F5DEB3'];
@@ -82,7 +82,7 @@ result.addEventListener("click", function () {
   var inputString = input.innerHTML;
 
   // forming an array of numbers. eg for above string it will be: numbers = ["10", "26", "33", "56", "34", "23"]
-  var numbers = inputString.split(/\+|\-|\x|\÷/g);
+  var numbers = inputString.split(/\+|\-|\x|\//g);
 
   // forming an array of operators. for above string it will be: operators = ["+", "+", "-", "*", "/"]
   // first we replace all the numbers and dot with empty string and then split
