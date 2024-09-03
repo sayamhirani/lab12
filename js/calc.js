@@ -1,14 +1,25 @@
 "use strict";
 
-document.getElementById("nameId").textContent = "Washington / 77777777"
+document.getElementById("nameId").textContent = "Sayam / 1005899";
 
 //Dynamic background color change
-const color = ['#F0E68C', '#FFDAB9', '#FFE4B5', '#D8BFD8', '#B0E0E6', '#AFEEEE', '#E0FFFF', '#98FB98', '#FFDEAD', '#F5DEB3'];
+const color = [
+  "#F0E68C",
+  "#FFDAB9",
+  "#FFE4B5",
+  "#D8BFD8",
+  "#B0E0E6",
+  "#AFEEEE",
+  "#E0FFFF",
+  "#98FB98",
+  "#FFDEAD",
+  "#F5DEB3",
+];
 
 let index = 0;
 setInterval(() => {
   document.body.style.backgroundColor = color[index];
-  index = (index + 1);
+  index = index + 1;
 }, 2000); // change color every second
 
 var input = document.getElementById("input"), // input/output button
